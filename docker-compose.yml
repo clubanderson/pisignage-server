@@ -10,6 +10,7 @@ services:
       - mongodb_config:/data/configdb
   pisignage-server:
     image: pisignage/pisignage-server:latest
+    platform: linux/amd64
     restart: unless-stopped
     ports:
       - 3000:3000
